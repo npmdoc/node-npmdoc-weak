@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/TooTallNate/node-weak#readme"
-
-    >weak (v1.0.1)</a>
+    <a href="https://github.com/TooTallNate/node-weak#readme">weak (v1.0.1)</a>
 </h1>
 <h4>Make weak references to JavaScript Objects.</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.weak">module weak</a><ol>
 
@@ -409,7 +402,7 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function create(obj, fn) {
   var weakref = bindings._create(obj, new Emitter());
-  if (&#x27;function&#x27; == typeof fn) {
+  if ('function' == typeof fn) {
     exports.addCallback(weakref, fn);
   }
   return weakref;
@@ -473,8 +466,8 @@
 
 ### Boolean weak.isWeakRef(Object obj)
 
-Checks to see if `obj` is &#x22;weak reference&#x22; instance. Returns `true` if the
-passed in object is a &#x22;weak reference&#x22;, `false` otherwise.
+Checks to see if `obj` is "weak reference" instance. Returns `true` if the
+passed in object is a "weak reference", `false` otherwise.
 
 
 ### EventEmitter weak.<span class="apidocCodeKeywordSpan">addCallback</span>(Weakref ref, Function callback)
@@ -528,7 +521,7 @@ garbage collected.
 ### Array weak.<span class="apidocCodeKeywordSpan">callbacks</span>(Weakref ref)
 
 Returns an Array that `ref` iterates through to invoke the GC callbacks. This
-utilizes node&#x27;s `EventEmitter#listeners()` function and therefore returns a copy
+utilizes node's `EventEmitter#listeners()` function and therefore returns a copy
 in node 0.10 and newer.
 ...</pre></li>
     </ul>
@@ -544,7 +537,7 @@ in node 0.10 and newer.
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function create(obj, fn) {
   var weakref = bindings._create(obj, new Emitter());
-  if (&#x27;function&#x27; == typeof fn) {
+  if ('function' == typeof fn) {
     exports.addCallback(weakref, fn);
   }
   return weakref;
@@ -601,7 +594,7 @@ created with. If this is called with a dead reference, `undefined` is returned.
 ### Boolean weak.<span class="apidocCodeKeywordSpan">isDead</span>(Weakref ref)
 
 Checks to see if `ref` is a dead reference. Returns `true` if the original Object
-has already been GC&#x27;d, `false` otherwise.
+has already been GC'd, `false` otherwise.
 
 
 ### Boolean weak.isNearDeath(Weakref ref)
@@ -623,12 +616,12 @@ has already been GC&#x27;d, `false` otherwise.
 ### Boolean weak.isDead(Weakref ref)
 
 Checks to see if `ref` is a dead reference. Returns `true` if the original Object
-has already been GC&#x27;d, `false` otherwise.
+has already been GC'd, `false` otherwise.
 
 
 ### Boolean weak.<span class="apidocCodeKeywordSpan">isNearDeath</span>(Weakref ref)
 
-Checks to see if `ref` is &#x22;near death&#x22;. This will be `true` exactly during the
+Checks to see if `ref` is "near death". This will be `true` exactly during the
 weak reference callback function, and `false` any other time.
 
 
@@ -650,14 +643,14 @@ weak reference callback function, and `false` any other time.
 
 ### Boolean weak.isNearDeath(Weakref ref)
 
-Checks to see if `ref` is &#x22;near death&#x22;. This will be `true` exactly during the
+Checks to see if `ref` is "near death". This will be `true` exactly during the
 weak reference callback function, and `false` any other time.
 
 
 ### Boolean weak.<span class="apidocCodeKeywordSpan">isWeakRef</span>(Object obj)
 
-Checks to see if `obj` is &#x22;weak reference&#x22; instance. Returns `true` if the
-passed in object is a &#x22;weak reference&#x22;, `false` otherwise.
+Checks to see if `obj` is "weak reference" instance. Returns `true` if the
+passed in object is a "weak reference", `false` otherwise.
 
 
 ### EventEmitter weak.addCallback(Weakref ref, Function callback)
@@ -785,7 +778,7 @@ garbage collected.
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function create(obj, fn) {
   var weakref = bindings._create(obj, new Emitter());
-  if (&#x27;function&#x27; == typeof fn) {
+  if ('function' == typeof fn) {
     exports.addCallback(weakref, fn);
   }
   return weakref;
@@ -811,7 +804,7 @@ garbage collected.
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function create(obj, fn) {
   var weakref = bindings._create(obj, new Emitter());
-  if (&#x27;function&#x27; == typeof fn) {
+  if ('function' == typeof fn) {
     exports.addCallback(weakref, fn);
   }
   return weakref;
@@ -875,8 +868,8 @@ garbage collected.
 
 ### Boolean weak.isWeakRef(Object obj)
 
-Checks to see if `obj` is &#x22;weak reference&#x22; instance. Returns `true` if the
-passed in object is a &#x22;weak reference&#x22;, `false` otherwise.
+Checks to see if `obj` is "weak reference" instance. Returns `true` if the
+passed in object is a "weak reference", `false` otherwise.
 
 
 ### EventEmitter weak.<span class="apidocCodeKeywordSpan">addCallback</span>(Weakref ref, Function callback)
@@ -930,7 +923,7 @@ garbage collected.
 ### Array weak.<span class="apidocCodeKeywordSpan">callbacks</span>(Weakref ref)
 
 Returns an Array that `ref` iterates through to invoke the GC callbacks. This
-utilizes node&#x27;s `EventEmitter#listeners()` function and therefore returns a copy
+utilizes node's `EventEmitter#listeners()` function and therefore returns a copy
 in node 0.10 and newer.
 ...</pre></li>
     </ul>
@@ -984,7 +977,7 @@ created with. If this is called with a dead reference, `undefined` is returned.
 ### Boolean weak.<span class="apidocCodeKeywordSpan">isDead</span>(Weakref ref)
 
 Checks to see if `ref` is a dead reference. Returns `true` if the original Object
-has already been GC&#x27;d, `false` otherwise.
+has already been GC'd, `false` otherwise.
 
 
 ### Boolean weak.isNearDeath(Weakref ref)
@@ -1006,12 +999,12 @@ has already been GC&#x27;d, `false` otherwise.
 ### Boolean weak.isDead(Weakref ref)
 
 Checks to see if `ref` is a dead reference. Returns `true` if the original Object
-has already been GC&#x27;d, `false` otherwise.
+has already been GC'd, `false` otherwise.
 
 
 ### Boolean weak.<span class="apidocCodeKeywordSpan">isNearDeath</span>(Weakref ref)
 
-Checks to see if `ref` is &#x22;near death&#x22;. This will be `true` exactly during the
+Checks to see if `ref` is "near death". This will be `true` exactly during the
 weak reference callback function, and `false` any other time.
 
 
@@ -1033,14 +1026,14 @@ weak reference callback function, and `false` any other time.
 
 ### Boolean weak.isNearDeath(Weakref ref)
 
-Checks to see if `ref` is &#x22;near death&#x22;. This will be `true` exactly during the
+Checks to see if `ref` is "near death". This will be `true` exactly during the
 weak reference callback function, and `false` any other time.
 
 
 ### Boolean weak.<span class="apidocCodeKeywordSpan">isWeakRef</span>(Object obj)
 
-Checks to see if `obj` is &#x22;weak reference&#x22; instance. Returns `true` if the
-passed in object is a &#x22;weak reference&#x22;, `false` otherwise.
+Checks to see if `obj` is "weak reference" instance. Returns `true` if the
+passed in object is a "weak reference", `false` otherwise.
 
 
 ### EventEmitter weak.addCallback(Weakref ref, Function callback)
@@ -1168,7 +1161,7 @@ garbage collected.
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function create(obj, fn) {
   var weakref = bindings._create(obj, new Emitter());
-  if (&#x27;function&#x27; == typeof fn) {
+  if ('function' == typeof fn) {
     exports.addCallback(weakref, fn);
   }
   return weakref;
@@ -1187,3 +1180,4 @@ garbage collected.
     ]
 </div>
 </div>
+</body></html>
